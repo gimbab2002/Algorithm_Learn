@@ -31,8 +31,8 @@ a=input()
 sum=0
 count=0
 for i in a:
-    m=(mapping.get(i)*(31**count)) % 1234567891
+    m=(mapping.get(i)*(31**count))
     sum=sum+m
     count+=1
-print(sum)
+print(sum%1234567891)
     
